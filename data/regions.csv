@@ -1,0 +1,15 @@
+﻿RGN20CD,RGN20CDO,RGN20NM,RGN20NMW
+E12000001,A,North East,Gogledd Ddwyrain
+E12000002,B,North West,Gogledd Orllewin
+E12000003,D,Yorkshire and The Humber,Swydd Efrog a Humber
+E12000004,E,East Midlands,Dwyrain y Canolbarth
+E12000005,F,West Midlands,Gorllewin y Canolbarth
+E12000006,G,East of England,Dwyrain Lloegr
+E12000007,H,London,Llundain
+E12000008,J,South East,De Ddwyrain
+E12000009,K,South West,De Orllewin
+W99999999,,(pseudo) Wales,
+S99999999,,(pseudo) Scotland,
+N99999999,,(pseudo) Northern Ireland,
+L99999999,,(pseudo) Channel Islands,
+M99999999,,(pseudo) Isle of Man,
