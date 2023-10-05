@@ -1,0 +1,1 @@
+/usr/local/Cellar/sqlite/3.43.1/bin/sqlite3 "database/postcodes_lookup.sqlite" ".read scripts/create_postcodes_lookup.sql"

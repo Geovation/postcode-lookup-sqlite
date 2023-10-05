@@ -1,0 +1,1 @@
+/usr/local/Cellar/sqlite/3.43.1/bin/sqlite3 "database/regions.sqlite" ".read scripts/create_regions_geo.sql"
