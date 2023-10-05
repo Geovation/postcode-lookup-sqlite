@@ -10,5 +10,3 @@
 /usr/local/Cellar/sqlite/3.43.1/bin/sqlite3 "database/postcodes_geo_wales.sqlite" ".param set :regionid W99999999" ".read scripts/create_postcodes_geo.sql"
 /usr/local/Cellar/sqlite/3.43.1/bin/sqlite3 "database/postcodes_geo_scotland.sqlite" ".param set :regionid S99999999" ".read scripts/create_postcodes_geo.sql"
 /usr/local/Cellar/sqlite/3.43.1/bin/sqlite3 "database/postcodes_geo_northern_ireland.sqlite" ".param set :regionid N99999999" ".read scripts/create_postcodes_geo.sql"
-
-/usr/local/Cellar/sqlite/3.43.1/bin/sqlite3 "database/postcodes_lookup.sqlite" ".read scripts/create_postcodes_lookup.sql"
