@@ -119,7 +119,7 @@ The postcode column is the primary clustered index, so should perform well when 
 
 ## Sample code
 
-A python code file is included to test the databases and provide a sample function. This can take in two command line arguments for longitude and latitude, and it will print the postcode information.
+A python code file is included to test the databases. This takes in two command line arguments for longitude and latitude, and it will print postcode information.
 
 Setup (MacOS):
 
@@ -160,12 +160,14 @@ The code in this repository is published under the [MIT Licence](LICENSE) and is
 
 The ONS produce the postcode lookup products used in this product, but there are specific license and attribution terms. Please see [the ONS licenses page](https://www.ons.gov.uk/methodology/geography/licences) for more info.
 
->> Our postcode products (derived from Code-Point® Open) are subject to the Open Government Licence.
->>
->>If you also use the Northern Ireland data (postcodes starting with “BT”), you need a separate licence for commercial use direct from Land and Property Services. We only issue a Northern Ireland End User Licence(for internal business use only) with the data. To download a copy, go to the “Download” section of this page. Use of the Northern Ireland data contained within the ONS postcode products constitutes acceptance of the Northern Ireland licensing terms and conditions.
+> Our postcode products (derived from Code-Point® Open) are subject to the Open Government Licence.
+>
+> If you also use the Northern Ireland data (postcodes starting with “BT”), you need a separate licence for commercial use direct from Land and Property Services. We only issue a Northern Ireland End User Licence(for internal business use only) with the data. To download a copy, go to the “Download” section of this page. Use of the Northern Ireland data contained within the ONS postcode products constitutes acceptance of the Northern Ireland licensing terms and conditions.
+
+The following attribution statements should be used but do always check the original licence pages for the data.
 
 - Contains OS data © Crown copyright and database right 2023
 - Contains Royal Mail data © Royal Mail copyright and database right 2023
 - Source: Office for National Statistics licensed under the Open Government Licence v.3.0
 
-Particularly with regard to Northern Ireland data, if you do not have a commercial licence you can use the regional files and remove the NI file.
+Particularly with regard to Northern Ireland data, if you do not have a commercial licence you can remove the NI file.
