@@ -26,7 +26,7 @@ select addgeometrycolumn('postcodes', 'geom', 4326, 'POINT', 'XY');
 insert into postcodes(postcode, geom)
 select p.postcode, makepoint(p.longitude, p.latitude, 4326)
 from staging_postcodes p
-where region = :regionid;
+where region like :regionid;
 
 select createspatialindex('postcodes', 'geom');
 

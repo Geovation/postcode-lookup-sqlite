@@ -1,7 +1,8 @@
+rm -f database/postcodes_geo_*.sqlite
 /usr/local/Cellar/sqlite/3.43.1/bin/sqlite3 "database/postcodes_geo_north_east.sqlite" ".param set :regionid E12000001" ".read scripts/create_postcodes_geo.sql"
 /usr/local/Cellar/sqlite/3.43.1/bin/sqlite3 "database/postcodes_geo_north_west.sqlite" ".param set :regionid E12000002" ".read scripts/create_postcodes_geo.sql"
 /usr/local/Cellar/sqlite/3.43.1/bin/sqlite3 "database/postcodes_geo_yorkshire_and_the_humber.sqlite" ".param set :regionid E12000003" ".read scripts/create_postcodes_geo.sql"
-/usr/local/Cellar/sqlite/3.43.1/bin/sqlite3 "database/postcodes_geo__east_midlands.sqlite" ".param set :regionid E12000004" ".read scripts/create_postcodes_geo.sql"
+/usr/local/Cellar/sqlite/3.43.1/bin/sqlite3 "database/postcodes_geo_east_midlands.sqlite" ".param set :regionid E12000004" ".read scripts/create_postcodes_geo.sql"
 /usr/local/Cellar/sqlite/3.43.1/bin/sqlite3 "database/postcodes_geo_west_midlands.sqlite" ".param set :regionid E12000005" ".read scripts/create_postcodes_geo.sql"
 /usr/local/Cellar/sqlite/3.43.1/bin/sqlite3 "database/postcodes_geo_east_of_england.sqlite" ".param set :regionid E12000006" ".read scripts/create_postcodes_geo.sql"
 /usr/local/Cellar/sqlite/3.43.1/bin/sqlite3 "database/postcodes_geo_london.sqlite" ".param set :regionid E12000007" ".read scripts/create_postcodes_geo.sql"
@@ -10,3 +11,5 @@
 /usr/local/Cellar/sqlite/3.43.1/bin/sqlite3 "database/postcodes_geo_wales.sqlite" ".param set :regionid W99999999" ".read scripts/create_postcodes_geo.sql"
 /usr/local/Cellar/sqlite/3.43.1/bin/sqlite3 "database/postcodes_geo_scotland.sqlite" ".param set :regionid S99999999" ".read scripts/create_postcodes_geo.sql"
 /usr/local/Cellar/sqlite/3.43.1/bin/sqlite3 "database/postcodes_geo_northern_ireland.sqlite" ".param set :regionid N99999999" ".read scripts/create_postcodes_geo.sql"
+
+/usr/local/Cellar/sqlite/3.43.1/bin/sqlite3 "database/postcodes_geo.sqlite" ".param set :regionid %%" ".read scripts/create_postcodes_geo.sql"

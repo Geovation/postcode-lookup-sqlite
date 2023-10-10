@@ -19,4 +19,6 @@ select
    ),4326) as geom
 from json_each(readfile('data/regions.geojson'), '$.features');
 
+select createspatialindex('regions', 'geom');
+
 vacuum;
