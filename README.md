@@ -1,6 +1,6 @@
 # Postcode lookup - SQLite and Spatialite
 
-This is a project to create a set of small SQLite databases that can support embedded postcode lookup capabilities, and provide postcode-associated geographies. These are built with data from the ONS Postcode directory. They are small and portable SQLite/Spatialite databases that can be embedded into multiple code solutions.
+This is a project to output a set of small SQLite databases to support embedded postcode lookup capabilities, and provide postcode-associated geographies. These are built with data from the ONS Postcode directory. They are small and portable SQLite/Spatialite databases that can be embedded into multiple code solutions.
 
 ## Database specification
 
@@ -10,7 +10,7 @@ This solution produces three databases in the `database` directory.
 2. A spatialite postcode database. This also requires spatialite to find a postcode from a location (reverse geocode). This is available as a single file (too large to be included in this repo), or as individual files per UK region. The UK region files are quicker but require a region to be identified first.
 3. A postcode lookup database as a plain SQLite file. This provides lookup geographies for a postcode such as the county, district and wetsminster constituency.
 
-Despite sometimes requiring multiple code lines to query each database, they should all be performant and provide local and powerful geocoding capabilities without using API calls or remote database calls.
+Despite sometimes requiring multiple code lines to query each database, they should all be performant and provide local and powerful geocoding capabilities without requiring either API calls or remote database calls.
 
 ## Updating files guide
 
