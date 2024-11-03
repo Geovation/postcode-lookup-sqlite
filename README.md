@@ -1,6 +1,6 @@
-# Postcode lookup - SQLite and Spatialite
+# Postcode lookup
 
-This is a project to output a set of small SQLite databases to support embedded postcode lookup capabilities, and provide postcode-associated geographies. These are built with data from the ONS Postcode directory. They are small and portable SQLite/Spatialite databases that can be embedded into multiple code solutions.
+This project creates a set of small SQLite databases to support embedded postcode lookup capabilities, and postcode-associated geographies. These are built with data from the ONS Postcode directory. They are small and portable SQLite/Spatialite databases that can be embedded into multiple code solutions.
 
 ## Database specification
 
