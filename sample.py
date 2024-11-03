@@ -8,7 +8,7 @@ print("Finding postcode information for longitude " +
       longitude + " and latitude " + latitude)
 
 with spatialite.connect('database/regions_geo.sqlite') as region_db, spatialite.connect('database/postcodes.sqlite') as postcode_lookup_db:
-    region_result = region_db.execute('select code, name, distance(makepoint(-2.36, 51.38, 4326), geom) as distance from regions order by distance asc limit 1', [
+    region_result = region_db.execute('select code, name, distance(makepoint(?, ?, 4326), geom) as distance from regions where distance < 0.01  order by distance asc limit 1', [
                                       float(longitude), float(latitude)]).fetchone()
     if region_result is None:
         print("No region found")
